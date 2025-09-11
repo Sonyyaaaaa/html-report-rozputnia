@@ -107,16 +107,31 @@
                                 <span>1. HTML-код форми зворотного зв'язку:</span>
                             </p>
                             <pre class="example">
-&lt;h2 class="form__title"&gt;Маєте бажання забронювати стіл?&lt;/h2&gt;
-&lt;div class="form__wrapper"&gt;
-    &lt;form action="#"&gt;
-        &lt;h3 class="form__subtitle"&gt;Тоді заповніть форму зворотного зв’язку:&lt;/h2&gt;
-        &lt;input class="form__firstname" type="text" placeholder="Ім'я" maxlength="20"&gt;
-        &lt;input class="form__phone" type="tel" placeholder="Номер телефону" maxlength="10"
-            minlength="10"&gt;
-        &lt;button class="form__button"&gt;Зателефонуйте мені!&lt;/button&gt;
-    &lt;/form&gt;
-&lt;/div&gt;</pre>
+&lt;section id="booking" aria-labelledby="booking-title"&gt;
+&lt;h2 id="booking-title"&gt;Заплануй свою подорож вже сьогодні!&lt;/h2&gt;
+
+&lt;form action="/book" method="post" aria-label="Форма бронювання"&gt;
+&lt;div&gt;
+&lt;label for="name"&gt;Ваше ім'я&lt;/label&gt;
+&lt;input id="name" name="name" type="text" required /&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;label for="email"&gt;Телефон&lt;/label&gt;
+&lt;input id="email" name="email" type="email" required /&gt;
+&lt;/div&gt;
+
+&lt;p class="consent-note"&gt;Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних.&lt;/p&gt;
+
+&lt;div&gt;
+&lt;button type="submit"&gt;ЗАБРОНЮВАТИ&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p class="consent-note"&gt;Виникли запитання? напишіть нам на info@THEFORESTHAVEN&lt;/p&gt;
+
+&lt;/form&gt;
+&lt;/section&gt;
+</pre>
                             <p>
                                 <span>2. Вигляд форми зворотного зв'язку у браузері:</span>
                             </p>

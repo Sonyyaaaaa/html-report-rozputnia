@@ -101,20 +101,38 @@
                         </aside>
                         <div class="lab-description__text">
                             <p>
-                                <span>На сторінці "Про нас"</span> я додала чотири зображення, на яких представлений
-                                інтер'єр кав'ярні.
+                                <span>На сторінці "Головна"</span> я додала три зображення, на яких представлені будинки
+                                для бронювання.
                             </p>
                             <p>
                                 <span>1. HTML-код зображень:</span>
                             </p>
                             <pre class="example">
-&lt;h2 class="place__title"&gt;Атмосфера кав'ярні&lt;/h2&gt;
-&lt;div class="place__photos"&gt;
-    &lt;img src="../img/place-1.jpg" alt="" class="place__photos-img place__photos-img-1"&gt;
-    &lt;img src="../img/place-2.jpg" alt="" class="place__photos-img place__photos-img-2"&gt;
-    &lt;img src="../img/place-3.jpg" alt="" class="place__photos-img place__photos-img-3"&gt;
-    &lt;img src="../img/place-4.jpg" alt="" class="place__photos-img place__photos-img-4"&gt;
-&lt;/div&gt;</pre>
+&lt;div class="houses-grid" role="list"&gt;
+&lt;!-- Картка 1 --&gt;
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/white-red-house-surrounded-by-trees-night 2 1.jpg" alt="Будинок з виходом до озера" /&gt;
+&lt;h3&gt;Будинок з виходом до озера&lt;/h3&gt;
+&lt;p&gt;Будинок з виходом до озера. 10 кімнат.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;!-- Картка 2 --&gt;
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/rustic-patio-furniture-house-deck-with-vegetation 1 1.jpg"
+alt="Будинок з каміном та двориком" /&gt;
+&lt;h3&gt;Великий котедж з каміном&lt;/h3&gt;
+&lt;p&gt;Великий будинок з каміном на вулиці — 6 кімнат. Чудово підходить для компаній.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;!-- Картка 3 --&gt;
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/photorealistic_house_with_wooden_architecture_timber_structure_1 1.jpg"
+alt="Котедж на двох" /&gt;
+&lt;h3&gt;Будинок для двох&lt;/h3&gt;
+&lt;p&gt;Ідеальний варіант, щоб відпочити зі своєю другою половинкою.&lt;/p&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+</pre>
                             <p>
                                 <span>2. Вигляд зображень у браузері:</span>
                             </p>
