@@ -112,29 +112,39 @@
                                 <span>HTML-код елемента:</span>
                             </p>
                             <pre class="example">
-&lt;ul id="menu-list"&gt;
-    &lt;li class="header__menu-item"&gt;    
-        &lt;a href="index.html" class="header__menu-link active"&gt;Головна сторінка&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="header__menu-item"&gt;
-        &lt;a href="./pages/about.html" class="header__menu-link"&gt;Про нас&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="header__menu-item"&gt;
-        &lt;a href="./pages/menu.html" class="header__menu-link"&gt;Меню&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="header__menu-item"&gt;
-        &lt;a href="./pages/contacts.html" class="header__menu-link"&gt;Контакти&lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;</pre>
+&lt;section id=&quot;gallery&quot; aria-label=&quot;Фотографії території&quot;&gt;
+&lt;div class=&quot;wide-photo&quot;&gt;
+&lt;img src=&quot;img/long-shot-mother-daughter-running-outdoors 1 1.jpg&quot;
+alt=&quot;Ділянка комплексу, люди гуляють полем&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gallery-footer&quot;&gt;
+&lt;span&gt;Розваги на території комплексу&lt;/span&gt;
+&lt;a href=&quot;#more&quot;&gt;Подивитися все →&lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</pre>
                             <p>
                                 <span>CSS-код елемента:</span>
                             </p>
                             <pre class="example">
-#menu-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 33px 0;
+#gallery {
+margin: 40px;
+margin-top: 140px;
+margin-bottom: 140px;
+}
+
+.wide-photo img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.gallery-footer {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+
+font-size: 20px;
 }</pre>
                             <p>
                                 <span>Вигляд елемента у браузері:</span>

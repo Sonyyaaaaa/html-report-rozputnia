@@ -112,24 +112,128 @@
                                 <span>HTML-код елемента:</span>
                             </p>
                             <pre class="example">
-&lt;form action="#"&gt;
-    &lt;h3 class="form__subtitle"&gt;Тоді заповніть форму зворотного зв’язку:&lt;/h2&gt;
-    &lt;input class="form__firstname" type="text" placeholder="Ім'я" maxlength="20"&gt;
-    &lt;input class="form__phone" type="tel" placeholder="Номер телефону" maxlength="10" minlength="10"&gt;
-    &lt;button class="form__button"&gt;Зателефонуйте мені!&lt;/button&gt;
-&lt;/form&gt;</pre>
+&lt;form action=&quot;/book&quot; method=&quot;post&quot; aria-label=&quot;Форма бронювання&quot;&gt;
+&lt;div&gt;
+&lt;label for=&quot;name&quot;&gt;Ваше ім&#39;я&lt;/label&gt;
+&lt;input id=&quot;name&quot; name=&quot;name&quot; type=&quot;text&quot; required /&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;label for=&quot;email&quot;&gt;Телефон&lt;/label&gt;
+&lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required /&gt;
+&lt;/div&gt;
+
+&lt;!-- новий flex-блок --&gt;
+&lt;div class=&quot;consent-and-button&quot;&gt;
+&lt;p class=&quot;consent-note&quot;&gt;
+Натискаючи на кнопку, я погоджуюсь з &lt;br&gt; обробкою персональних даних
+&lt;/p&gt;
+&lt;button type=&quot;submit&quot;&gt;ЗАБРОНЮВАТИ&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;consent-note footer-note&quot;&gt;
+Виникли запитання? напишіть нам на info@THEFORESTHAVEN
+&lt;/p&gt;
+&lt;/form&gt;
+</pre>
                             <p>
                                 <span>CSS-код елемента:</span>
                             </p>
                             <pre class="example">
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 926px;
-    border-radius: 20px;
-    margin: 0 auto;
-    padding: 36px 254px;
-    background-color: #99582a;
+#booking form {
+max-width: 770px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr auto;
+gap: 20px;
+align-items: end;
+text-align: left;
+}
+
+#booking label {
+margin-left: 15px;
+display: block;
+font-size: 14px;
+margin-bottom: 6px;
+color: #ccc;
+}
+
+#booking input {
+width: 100%;
+margin-left: 15px;
+margin-bottom: 20px;
+right: 40px;
+border: none;
+border-bottom: 1px solid #777;
+background: transparent;
+color: #fff;
+font-size: 16px;
+padding: 0;
+outline: none;
+}
+
+#booking input::placeholder {
+color: #aaa;
+}
+
+/* Нотатка */
+/* розташування тексту та кнопки в рядок */
+.consent-and-button {
+display: flex;
+justify-content: space-between;
+align-items: center;
+grid-column: 1 / -1;
+/* щоб тягнулося на всю ширину */
+gap: 20px;
+}
+
+.consent-note {
+font-size: 16px;
+color: #ccc;
+margin-left: 15px;
+flex: 1;
+}
+
+/* кнопка */
+#booking button {
+background: #fff;
+color: #2d2119;
+border: none;
+margin-right: 5px;
+padding: 14px 28px;
+font-size: 20px;
+font-weight: 400;
+text-transform: uppercase;
+cursor: pointer;
+transition: 0.3s;
+flex-shrink: 0;
+/* не зменшується */
+}
+
+#booking button:hover {
+background: #2d2119;
+color: #fff;
+}
+
+/* нижній сірий текст */
+.footer-note {
+grid-column: 1 / -1;
+text-align: center;
+font-size: 13px;
+color: #888;
+margin-top: 50px;
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+.consent-and-button {
+flex-direction: column;
+align-items: flex-start;
+}
+
+#booking button {
+width: 100%;
+}
 }</pre>
                             <p>
                                 <span>Вигляд елемента у браузері:</span>

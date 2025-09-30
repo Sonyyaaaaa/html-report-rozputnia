@@ -112,23 +112,42 @@
                                 <span>HTML-код елемента:</span>
                             </p>
                             <pre class="example">
-&lt;div class="about-info"&gt;
-    &lt;p class="about-info__text"&gt;
-        "Смачна Пауза" - це більше, ніж просто кав’ярня. Наша концепція полягає у створенні
-        привітного та дружнього середовища, де кожен може відчути себе як вдома. Ми прагнемо
-        забезпечити нашим клієнтам вищий рівень обслуговування та якісних продуктів, щоб
-        кожне відвідування "Смачної Паузи" стало приємним і запам'ятовуваним досвідом.
-    &lt;/p&gt;
-    &lt;img src="../img/about-2.jpg" alt="" class="about-info__img"&gt;
-&lt;/div&gt;</pre>
+&lt;div class=&quot;pagination&quot; aria-label=&quot;Навігація по сторінкам будинків&quot;&gt;
+&lt;a href=&quot;#houses?page=1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#houses?page=2&quot; class=&quot;active&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#houses?page=3&quot;&gt;3&lt;/a&gt;
+&lt;/div&gt;
+</pre>
                             <p>
                                 <span>CSS-код елемента:</span>
                             </p>
                             <pre class="example">
-.about-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.pagination a {
+text-decoration: none;
+color: #2d2119;
+font-size: 16px;
+font-weight: 400;
+position: relative;
+}
+
+/* Роздільні лінії */
+.pagination a:not(:last-child)::after {
+content: "";
+position: absolute;
+right: -55px;
+/* відстань від цифри до лінії */
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 1px;
+background: #111;
+}
+
+/* Активна цифра */
+.pagination a.active {
+font-size: 22px;
+/* більша цифра */
+font-weight: 400;
 }</pre>
                             <p>
                                 <span>Вигляд елемента у браузері:</span>

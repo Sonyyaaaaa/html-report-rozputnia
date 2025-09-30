@@ -112,22 +112,66 @@
                                 <span>HTML-код елемента:</span>
                             </p>
                             <pre class="example">
-&lt;div class="contacts__infobox"&gt;
-    &lt;p&gt;Номер телефона: &lt;/p&gt;
-    &lt;a href="tel:+380638788787"&gt;+38 (063) 878 87 87&lt;/a&gt;
-&lt;/div&gt;</pre>
+&lt;footer id=&quot;contacts&quot; role=&quot;contentinfo&quot;&gt;
+&lt;div class=&quot;footer-top&quot;&gt;
+&lt;div class=&quot;footer-contacts&quot;&gt;
+&lt;p&gt;number: &lt;br&gt; &lt;a href=&quot;tel:+380963526984&quot;&gt;+38 (096) 352 69 84&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;a href=&quot;#&quot; class=&quot;hello&quot;&gt;The Forest Haven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;footer-social&quot;&gt;
+&lt;p&gt;email: &lt;br&gt; &lt;a href=&quot;mailto:info@foresthaven&quot;&gt;INFO@FORESTHAVEN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;social media &lt;br&gt; &lt;a href=&quot;#&quot;&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;footer-bottom&quot;&gt;
+&lt;p&gt;The Forest Haven&lt;/p&gt;
+&lt;p&gt;&copy; 2025 The Forest Haven. All rights reserved.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+</pre>
                             <p>
                                 <span>CSS-код елемента:</span>
                             </p>
                             <pre class="example">
-.contacts__infobox p {
-    font-size: 16px;
-    font-weight: 700;
+footer {
+background: #3C3126;
+color: #fff;
+padding: 40px 40px;
+font-size: 44px;
 }
 
-.contacts__infobox a {
-    color: #fff;
-    font-size: 16px;
+p {
+font-size: 16px;
+}
+
+.footer-top {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+
+.footer-contacts a {
+font-size: 44px;
+}
+
+.hello {
+font-family: 'Playfair Display', serif;
+font-weight: 400;
+}
+
+.footer-social a {
+font-size: 44px;
+}
+
+.footer-bottom {
+text-align: center;
+font-size: 12px;
+color: #aaa;
 }</pre>
                             <p>
                                 <span>Вигляд елемента у браузері:</span>
