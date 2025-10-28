@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Лабораторна робота №4</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="info">
+                    <h2 class="info__place">Київський Політехнічний Інститут</h2>
+                    <a href="../index.html">
+                        <h1 class="info__title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+                    </a>
+                    <h2 class="info__subtitle">З ДИСЦИПЛІНИ
+                        <span class="yellow-text">«ПРОГРАМУВАННЯ ІНТЕРНЕТ-ЗАСТОСУВАНЬ»</span>
+                    </h2>
+                    <div class="infobox">
+                        <p class="info__name">
+                            <span class="yellow-text">Студентка: </span>
+                            <a href="#" class="info__name-link">Розпутня Софія Михайлівна</a>
+                        </p>
+                        <p class="info__group">
+                            <span class="yellow-text">Група: </span>
+                            IO-31
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="lab-works">
+                <div class="container">
+                    <ul class="lab-works__list">
+                        <li class="lab-works__item">
+                            <a href="../lab1/lab-1.1.html" class="lab-works__link">Лабораторна робота №1</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab2/lab-2.1.html" class="lab-works__link">Лабораторна робота №2</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab3/lab-3.1.html" class="lab-works__link">Лабораторна робота №3</a>
+                        </li>
+                        <li class="lab-works__item active">
+                            <a href="../lab4/lab-4.1.html" class="lab-works__link">Лабораторна робота №4</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab5/lab-5.1.html" class="lab-works__link">Лабораторна робота №5</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab6-7/lab-6-7.1.html" class="lab-works__link">Лабораторна робота №6-7</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab8-9/lab-8-9.1.html" class="lab-works__link">Лабораторна робота №8-9</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lab-description">
+                <div class="container">
+                    <div class="lab-description__wrapper">
+                        <aside class="lab-description__aside">
+                            <ul class="lab-description__list">
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.1.html" class="lab-description__link">Тема, мета ЛР №4. Місце
+                                        розташування
+                                        сайту</a>
+                                </li>
+                                <li class="lab-description__item active">
+                                    <a href="./lab-4.2.html" class="lab-description__link">Завдання №1. Десктопна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short active">
+                                    <a href="./lab-4.2.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.3.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.4.html" class="lab-description__link">Завдання №2. Планшетна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.4.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.5.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.6.html" class="lab-description__link">Завдання №3. Мобільна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.6.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.7.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.8.html" class="lab-description__link">Висновки</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="lab-description__text">
+                            <p><span>Створення десктопної версії:</span> <br>
+                                Спочатку було створено базову HTML-структуру з семантичними тегами (header, main, footer
+                                і т.д.) та
+                                CSS-стилі. Для компонування використовувалися Flexbox.
+                                <br><br>
+                                <span>Створення планшетної та мобільної версій:</span> <br>
+                                Адаптація під менші екрани реалізована за допомогою CSS медіа-запитів (@media) з точками
+                                перелому на 1200px,
+                                992px , 600px та 400рх. <br>Всередині медіа-запитів:
+
+                                Flexbox (display: flex, flex-wrap: wrap) застосовано для автоматичного перебудовування
+                                сітки карток.
+                                <br>
+                                Реалізовано бургер-меню (додано HTML-кнопку, CSS для вигляду та анімації виїзду,
+                                JavaScript для перемикання класів).
+                                <br>
+                                Перебудовано макети деяких секцій (напр., hero) для уникнення накладання елементів на
+                                вузьких екранах.
+                                <br>
+                                Скориговано відступи, розміри шрифтів та ширини блоків.
+                                <br>
+                                Використано відносні одиниці (vh, vw у clamp(), %, rem) та метатег viewport.
+                                <br>
+                                Додано CSS transition для плавних ефектів.
+                                <br><br>
+                                Логічні оператори: використовувався логічний оператор and у медіа-запитах (напр., @media
+                                (max-width: 992px)
+                                означає @media all and (max-width: 992px)).
+                            </p>
+                            <p><span>HTML-код ГОЛОВНА СТОРІНКА:</span></p>
+
+                            <pre class="example">
+&lt;!doctype html&gt;
+&lt;html lang="uk"&gt;
+
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;
+&lt;title&gt;The Forest Haven — Головна&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;link
+href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+rel="stylesheet"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header role="banner"&gt;
+&lt;div class="topbar"&gt;
+&lt;div class="logo"&gt;
+&lt;a href="/"&gt;The Forest Haven&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;nav aria-label="Головна навігація"&gt;
+
+&lt;button class="burger-menu" aria-label="Відкрити/закрити меню" aria-expanded="false"&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;ul class="nav-links"&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="about.html"&gt;Про нас&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="houses.html"&gt;Будинки&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="territory.html"&gt;Територія&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;div class="header-contacts"&gt;
+&lt;a href="tel:+380343426292"&gt;+38 (034) 342 62 92&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;main id="home"&gt;
+
+&lt;section id="hero" aria-label="Головний банер"&gt;
+&lt;div class="hero-media"&gt;
+&lt;img src="img/Group 1.jpg" alt="Два сучасні котеджі в лісі біля водойми" /&gt;
+&lt;/div&gt;
+
+&lt;div class="hero-content"&gt;
+&lt;p class="subtitle"&gt;(FROM 2023)&lt;/p&gt;
+&lt;h1&gt;The Forest Haven&lt;/h1&gt;
+
+&lt;p class="lead"&gt;
+Новий, сучасний багатофункціональний комплекс для відпочинку, розвитку, занять спортом та
+оздоровлення весь рік
+&lt;/p&gt;
+&lt;a href="#booking" class="btn-book"&gt;ЗАБРОНЮВАТИ&lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="about"&gt;
+&lt;div class="container"&gt;
+&lt;h2 class="section-title"&gt;
+&lt;span class="line1"&gt;Тихе місце&lt;/span&gt;
+&lt;span class="line2-wrap"&gt;
+&lt;span class="section-subtitle"&gt;(Переваги комплексу)&lt;/span&gt;
+&lt;span class="line2"&gt;для перезавантаження&lt;/span&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+
+&lt;table class="about-table"&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;100%&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Гармонія. Комплекс розташований серед високих сосен і дубів, що забезпечує чисте повітря та
+затишок.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;0&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Непотрібних шумів. Абсолютна тиша — ідеальне місце для відпочинку й оздоровлення.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;24/7&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Охорона. Баланс між приватністю і безпекою.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;100%&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Унікальна концепція. Максимум гармонії, мінімум суєти.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="houses" aria-labelledby="houses-title"&gt;
+&lt;h2 id="houses-title"&gt;Будинки&lt;/h2&gt;
+
+&lt;div class="houses-grid" role="list"&gt;
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/white-red-house-surrounded-by-trees-night 2 1.jpg" alt="Будинок з виходом до озера" /&gt;
+&lt;h3&gt;Будинок з виходом до озера&lt;/h3&gt;
+&lt;p&gt;Будинок з виходом до озера. 10 кімнат.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/rustic-patio-furniture-house-deck-with-vegetation 1 1.jpg"
+alt="Будинок з каміном та двориком" /&gt;
+&lt;h3&gt;Великий котедж з каміном&lt;/h3&gt;
+&lt;p&gt;Великий будинок з каміном на вулиці — 6 кімнат. Чудово підходить для компаній.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article class="house-card" role="listitem"&gt;
+&lt;img src="img/photorealistic_house_with_wooden_architecture_timber_structure_1 1.jpg"
+alt="Котедж на двох" /&gt;
+&lt;h3&gt;Будинок для двох&lt;/h3&gt;
+&lt;p&gt;Ідеальний варіант, щоб відпочити зі своєю другою половинкою.&lt;/p&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+
+&lt;div class="pagination" aria-label="Навігація по сторінкам будинків"&gt;
+&lt;a href="#houses?page=1"&gt;1&lt;/a&gt;
+&lt;a href="#houses?page=2" class="active"&gt;2&lt;/a&gt;
+&lt;a href="#houses?page=3"&gt;3&lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="gallery" aria-label="Фотографії території"&gt;
+&lt;div class="wide-photo"&gt;
+&lt;img src="img/long-shot-mother-daughter-running-outdoors 1 1.jpg"
+alt="Ділянка комплексу, люди гуляють полем" /&gt;
+&lt;/div&gt;
+&lt;div class="gallery-footer"&gt;
+&lt;span&gt;Розваги на території комплексу&lt;/span&gt;
+&lt;a href="#more"&gt;Подивитися все →&lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="booking" aria-labelledby="booking-title"&gt;
+&lt;h2 id="booking-title"&gt;Заплануй свою подорож &lt;br&gt; вже сьогодні!&lt;/h2&gt;
+
+&lt;form action="/book" method="post" aria-label="Форма бронювання"&gt;
+&lt;div&gt;
+&lt;label for="name"&gt;Ваше ім'я&lt;/label&gt;
+&lt;input id="name" name="name" type="text" required /&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;label for="email"&gt;Телефон&lt;/label&gt;
+&lt;input id="email" name="email" type="email" required /&gt;
+&lt;/div&gt;
+
+&lt;div class="consent-and-button"&gt;
+&lt;p class="consent-note"&gt;Натискаючи на кнопку, я погоджуюсь з &lt;br&gt; обробкою персональних даних&lt;/p&gt;
+&lt;button type="submit"&gt;ЗАБРОНЮВАТИ&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p class="consent-note footer-note"&gt;Виникли запитання? напишіть нам на info@THEFORESTHAVEN&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer id="contacts" role="contentinfo"&gt;
+&lt;div class="footer-top"&gt;
+&lt;div class="footer-contacts"&gt;
+&lt;p&gt;number: &lt;br&gt; &lt;a href="tel:+380963526984"&gt;+38 (096) 352 69 84&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;a href="#" class="hello"&gt;The Forest Haven&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class="footer-social"&gt;
+&lt;p&gt;email: &lt;br&gt; &lt;a href="mailto:info@foresthaven"&gt;INFO@FORESTHAVEN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;social media &lt;br&gt; &lt;a href="#"&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="footer-bottom"&gt;
+&lt;p&gt;The Forest Haven&lt;/p&gt;
+&lt;p&gt;© 2025 The Forest Haven. All rights reserved.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                            </pre>
+                            <p><span>CSS-код:</span></p>
+                            <pre class="example">
+
+
+/* =======================================
+Базові стилі (Десктоп)
+======================================= */
+
+/* --------------------
+&nbsp;&nbsp;&nbsp;BASE STYLES
+-------------------- */
+* {
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box;
+}
+
+body {
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Manrope', sans-serif;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #2c2c2c;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #fff;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Playfair Display', serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: 600;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #fff; /* У hero білий, поза hero змінюється */
+}
+
+a {
+&nbsp;&nbsp;&nbsp;&nbsp;color: inherit;
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
+&nbsp;&nbsp;&nbsp;&nbsp;transition: 0.3s ease;
+}
+
+a:hover {
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.7;
+}
+
+/* --------------------
+&nbsp;&nbsp;&nbsp;HEADER
+-------------------- */
+header {
+&nbsp;&nbsp;&nbsp;&nbsp;background: transparent;
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px 40px;
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+&nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between;
+&nbsp;&nbsp;&nbsp;&nbsp;align-items: center;
+&nbsp;&nbsp;&nbsp;&nbsp;z-index: 1000;
+}
+
+.topbar {
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+&nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between;
+&nbsp;&nbsp;&nbsp;&nbsp;align-items: center;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #fff;
+}
+
+.logo a {
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Playfair Display', serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: 400;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #fff;
+}
+
+nav {
+display: flex;
+align-items: center;
+}
+
+nav ul {
+&nbsp;&nbsp;&nbsp;&nbsp;list-style: none;
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex;
+&nbsp;&nbsp;&nbsp;&nbsp;gap: 25px;
+}
+
+nav a {
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: 400;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;
+}
+
+.header-contacts a {
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: 400;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;
+}
+
+/* ===== HERO ===== */
+#hero {
+&nbsp;&nbsp;&nbsp;&nbsp;position: relative;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 100vh;
+overflow: hidden;
+}
+#hero .hero-media {
+position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+}
+#hero .hero-media img {
+&nbsp;&nbsp;&nbsp;&nbsp;display: block; width: 100%; min-height: 100%; object-fit: cover;
+}
+.hero-content {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute; inset: 0; z-index: 2; color: #fff;
+}
+.hero-content h1 {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute; left: 6%; top: 40%; font-family: 'Playfair Display', serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic; font-weight: 400; font-size: clamp(144px, 8vw, 110px);
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1; white-space: nowrap; color: #fff;
+}
+.hero-content .subtitle {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute; top: calc(40% - 20px); left: 55%; font-size: 19px;
+&nbsp;&nbsp;&nbsp;&nbsp;letter-spacing: 1px; text-transform: uppercase; color: #fff;
+}
+.hero-content .lead {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute; left: 6%; bottom: 14%; max-width: 600px; font-size: 20px;
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: 400; letter-spacing: 1px; text-transform: uppercase; line-height: 1.6; color: #fff;
+}
+.btn-book {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute; right: 3%; bottom: 17%; display: inline-block; padding: 16px 52px;
+&nbsp;&nbsp;&nbsp;&nbsp;background: #fff; color: #111; font-size: 20px; font-weight: 600; text-transform: uppercase;
+transition: 0.25s;
+}
+.btn-book:hover { background: #3C3126; color: #fff; }
+
+/* --------------------
+&nbsp;&nbsp;&nbsp;ABOUT (index.html)
+-------------------- */
+.section-title {
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.1; color: #2d2119; margin: 40px; margin-top: 140px;
+}
+.section-title .line1,
+.section-title .line2 {
+font-size: clamp(70px, 8vw, 112px); white-space: nowrap;
+}
+.section-title .line1 { flex-shrink: 0; }
+.section-title .line2-wrap {
+display: flex; flex-direction: column; align-items: flex-end; flex-grow: 1; min-width: 50%; position: static;
+}
+.section-title .line2 { /* Порядок не потрібен */ }
+.section-subtitle {
+&nbsp;&nbsp;&nbsp;&nbsp;position: static; transform: none; font-family: 'Manrope', sans-serif; font-style: normal;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px; text-transform: uppercase; letter-spacing: 1px; color: #7b6454;
+white-space: nowrap; margin-top: 10px; text-align: right; width: 100%;
+}
+.about-table {
+&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 84px; margin-bottom: 140px; border-collapse: collapse; width: auto;
+margin-left: 30%; max-width: 60%;
+}
+.about-table tr { border-bottom: 1px solid #ccc; }
+.about-table tr:first-child { border-top: 1px solid #ccc; }
+.about-table td { padding: 14px 12px; font-size: 20px; line-height: 1.5; color: #2d2119; vertical-align: center; }
+.about-table td:first-child { width: 80px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 44px;
+text-align: center; color: #2d2119; padding-right: 80px; }
+
+/* --- Інші секції... --- */
+/* (Скорочено для прикладу) */
+#houses { margin: 0 40px; background: #fff; color: #2d2119; }
+#houses-title { font-family: 'Playfair Display', serif; font-size: clamp(60px, 5vw, 96px); font-style: italic;
+font-weight: 400; margin-bottom: 40px; color: #3a2b20; }
+.houses-grid { display: flex; flex-wrap: wrap; gap: 40px; }
+.house-card { flex: 1 1 30%; min-width: 300px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.house-card:hover { transform: translateY(-px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+/* ... (інші стилі для gallery, booking, footer, about.html, houses.html, territory.html) ... */
+
+/* --- Бургер меню ховаємо --- */
+.burger-menu {
+display: none;
+/* ... */
+}
+.burger-menu span {
+/* ... */
+transition: transform 0.3s ease, background-color 0.3s ease;
+}</pre>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
+    </div>
+    <script>
+        function scrollToBottom() {
+            const currentScroll = window.scrollY;
+            window.scrollTo(0, document.body.scrollHeight);
+            setTimeout(() => {
+                if (window.scrollY !== currentScroll) {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
+        scrollToBottom();
+    </script>
+</body>
+
+</html>

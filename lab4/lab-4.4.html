@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Лабораторна робота №4</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="info">
+                    <h2 class="info__place">Київський Політехнічний Інститут</h2>
+                    <a href="../index.html">
+                        <h1 class="info__title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+                    </a>
+                    <h2 class="info__subtitle">З ДИСЦИПЛІНИ
+                        <span class="yellow-text">«ПРОГРАМУВАННЯ ІНТЕРНЕТ-ЗАСТОСУВАНЬ»</span>
+                    </h2>
+                    <div class="infobox">
+                        <p class="info__name">
+                            <span class="yellow-text">Студентка: </span>
+                            <a href="#" class="info__name-link">Розпутня Софія Михайлівна</a>
+                        </p>
+                        <p class="info__group">
+                            <span class="yellow-text">Група: </span>
+                            IO-31
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="lab-works">
+                <div class="container">
+                    <ul class="lab-works__list">
+                        <li class="lab-works__item">
+                            <a href="../lab1/lab-1.1.html" class="lab-works__link">Лабораторна робота №1</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab2/lab-2.1.html" class="lab-works__link">Лабораторна робота №2</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab3/lab-3.1.html" class="lab-works__link">Лабораторна робота №3</a>
+                        </li>
+                        <li class="lab-works__item active">
+                            <a href="../lab4/lab-4.1.html" class="lab-works__link">Лабораторна робота №4</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab5/lab-5.1.html" class="lab-works__link">Лабораторна робота №5</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab6-7/lab-6-7.1.html" class="lab-works__link">Лабораторна робота №6-7</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab8-9/lab-8-9.1.html" class="lab-works__link">Лабораторна робота №8-9</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lab-description">
+                <div class="container">
+                    <div class="lab-description__wrapper">
+                        <aside class="lab-description__aside">
+                            <ul class="lab-description__list">
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.1.html" class="lab-description__link">Тема, мета ЛР №4. Місце
+                                        розташування
+                                        сайту</a>
+                                </li>
+                                <li class="lab-description__item ">
+                                    <a href="./lab-4.2.html" class="lab-description__link">Завдання №1. Десктопна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.2.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short ">
+                                    <a href="./lab-4.3.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item active">
+                                    <a href="./lab-4.4.html" class="lab-description__link">Завдання №2. Планшетна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short active">
+                                    <a href="./lab-4.4.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.5.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.6.html" class="lab-description__link">Завдання №3. Мобільна
+                                        версія</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.6.html" class="lab-description__link">CSS-код</a>
+                                </li>
+                                <li class="lab-description__item short">
+                                    <a href="./lab-4.7.html" class="lab-description__link">Скріншот сторінки</a>
+                                </li>
+                                <li class="lab-description__item">
+                                    <a href="./lab-4.8.html" class="lab-description__link">Висновки</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="lab-description__text">
+                            <p><span>CSS-код:</span></p>
+                            <pre class="example">
+/* =======================================
+&nbsp;&nbsp;&nbsp;Фрагмент: Адаптивність / Планшет
+======================================= */
+
+/* === 0. ПРОМІЖНИЙ РОЗМІР (Планшет Ландшафт / Маленький Ноутбук) === */
+@media (max-width: 1200px) {
+/* --- Коригуємо Hero, ПЕРЕХОДИМО НА FLEX --- */
+#hero { height: auto; min-height: 70vh; padding: 150px 20px 50px 20px; display: flex; flex-direction: column;
+justify-content: center; align-items: center; text-align: center; position: relative; }
+#hero .hero-media { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; }
+#hero::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:
+rgba(0,0,0,0.4); z-index: -1; }
+.hero-content { position: static; }
+.hero-content h1, .hero-content .subtitle, .hero-content .lead, #hero .btn-book { position: static; transform: none;
+white-space: normal; text-align: center; left: auto; top: auto; right: auto; bottom: auto; max-width: 100%; }
+.hero-content h1 { font-size: clamp(80px, 12vw, 120px); line-height: 1.1; }
+.hero-content .subtitle { display: none; }
+.hero-content .lead { font-size: 18px; margin-top: 20px; max-width: 80%; margin-left: auto; margin-right: auto; }
+#hero .btn-book { margin-top: 30px; padding: 16px 40px; font-size: 18px; }
+
+/* --- Коригуємо Заголовок "Тихе місце" --- */
+.section-title { margin: 100px 20px 40px 20px; align-items: flex-start; flex-wrap: wrap; gap: 0 10px; }
+.section-title .line1, .section-title .line2 { font-size: clamp(60px, 8vw, 90px); white-space: normal; line-height: 1.1;
+}
+.section-title .line2-wrap { margin-left: 0; position: static; width: auto; align-items: flex-start; }
+.section-title .line2 { order: 1; white-space: normal; }
+.section-subtitle { position: static; transform: none; font-size: 16px; text-align: left; margin-top: 15px; order: 2;
+white-space: normal; }
+.about-table { margin-left: 20px; margin-right: 20px; width: auto; }
+
+/* --- Коригуємо відступи інших секцій --- */
+#houses, #gallery { margin-left: 20px; margin-right: 20px; }
+#booking { width: calc(100% - 40px); margin-left: 20px; margin-right: 20px; }
+.about-section, .territory, .houses-section { margin-left: 0; margin-right: 0; padding-left: 20px; padding-right: 20px;
+}
+}
+
+/* === 1. ПЛАНШЕТ (Портрет і менше) === */
+@media (max-width: 992px) {
+/* --- 1.1 Загальні відступи --- */
+header { padding: 15px 20px; }
+main section { padding-left: 20px; padding-right: 20px; }
+/* --- 1.2 Навігація (Бургер-меню) --- */
+.burger-menu { display: block; }
+.header-contacts { display: none; }
+nav ul.nav-links { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: #3C3126; display:
+flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem; transform: translateX(100%);
+transition: transform 0.4s ease-in-out; }
+nav ul.nav-links.active { transform: translateX(0); }
+nav .nav-links a { font-size: 1.75rem; color: #fff; }
+.burger-menu.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger-menu.active span:nth-child(2) { background-color: transparent; }
+.burger-menu.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+/* --- 1.3 Головна секція (Hero) --- */
+.hero-content h1 { font-size: clamp(60px, 18vw, 90px); }
+/* --- 1.4 Секція "Тихе Місце" (index.html) --- */
+.section-title { flex-wrap: wrap; }
+.section-title .line1 { font-size: clamp(50px, 8vw, 70px); flex-shrink: 1; }
+.section-title .line2 { font-size: clamp(50px, 8vw, 70px); }
+.about-table { width: 100%; margin: 40px auto 80px auto; padding: 0; margin-left: 0; }
+.about-table td { font-size: 16px; padding: 10px 5px; vertical-align: top; }
+.about-table td:first-child { font-size: 30px; padding-right: 15px; width: 60px; }
+/* --- 1.5 Секція "Будинки" (index.html) --- */
+#houses { margin: 0; padding-top: 40px; padding-bottom: 40px; }
+#houses-title { font-size: 60px; }
+.houses-grid { gap: 20px; }
+/* --- 1.6 Інші секції (index.html) --- */
+#gallery { margin: 40px 0 100px 0; }
+#booking { width: 100%; margin: 80px auto; padding: 40px 20px; }
+#booking form { grid-template-columns: 1fr; gap: 10px; }
+#booking input { margin-left: 0; }
+.consent-and-button { flex-direction: column; align-items: stretch; }
+#booking button { width: 100%; margin-right: 0; }
+.consent-note { text-align: center; margin-left: 0; margin-bottom: 15px; }
+footer { padding: 30px 20px; }
+footer p { font-size: 16px; }
+.footer-contacts a, .footer-social a { font-size: 30px; }
+/* --- 1.7 Сторінка "Про нас" (about.html) --- */
+.about-section { padding: 80px 20px; margin: 0; }
+.about-section h2::after { position: static; display: block; text-align: left; margin-top: 10px; font-size: 16px; }
+.about-highlights { grid-template-columns: 1fr; gap: 20px; }
+.highlight-card { width: 100%; }
+/* --- 1.8 Сторінка "Будинки" (houses.html) --- */
+.houses-section { margin: 0; padding: 100px 20px 20px 20px; }
+.houses-section h2::after { position: static; display: block; text-align: left; margin-top: 10px; font-size: 16px; }
+.house-type { margin: 0 0 40px 0; padding: 0; }
+.house-type h3 { position: static; font-size: 30px; margin-bottom: 20px; }
+.house-content { flex-direction: column; margin: 0; }
+.house-images { flex-direction: row; width: 100%; }
+.house-images img { flex: 1; width: 50%; height: 300px; }
+.house-description p { margin-left: 0; width: 100%; text-align: left; font-size: 18px; }
+.house-description ul { padding-left: 25px; padding-top: 20px; }
+.house-description li { font-size: 18px; }
+.house-description .btn-book { position: static; display: block; text-align: center; margin: 20px 0; padding: 16px 30px;
+font-size: 16px; }
+.houses-note { margin: 40px 0 80px 0; }
+/* --- 1.9 Сторінка "Територія" (territory.html) --- */
+.territory { padding: 80px 20px; margin: 0; }
+.territory h2::after { position: static; display: block; text-align: left; margin-top: 10px; font-size: 16px; }
+.territory-table { width: 100%; margin: 20px 0; }
+.territory-table td:first-child { width: auto; font-size: 24px; padding-right: 20px; }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
+    </div>
+    <script>
+        function scrollToBottom() {
+            const currentScroll = window.scrollY;
+            window.scrollTo(0, document.body.scrollHeight);
+            setTimeout(() => {
+                if (window.scrollY !== currentScroll) {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
+        scrollToBottom();
+    </script>
+</body>
+
+</html>
