@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Лабораторна робота №5</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="info">
+                    <h2 class="info__place">Київський Політехнічний Інститут</h2>
+                    <a href="../index.html">
+                        <h1 class="info__title">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+                    </a>
+                    <h2 class="info__subtitle">З ДИСЦИПЛІНИ
+                        <span class="yellow-text">«ПРОГРАМУВАННЯ ІНТЕРНЕТ-ЗАСТОСУВАНЬ»</span>
+                    </h2>
+                    <div class="infobox">
+                        <p class="info__name">
+                            <span class="yellow-text">Студентка: </span>
+                            <a href="#" class="info__name-link">Розпутня Софія Михайлівна</a>
+                        </p>
+                        <p class="info__group">
+                            <span class="yellow-text">Група: </span>
+                            IO-31
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="lab-works">
+                <div class="container">
+                    <ul class="lab-works__list">
+                        <li class="lab-works__item">
+                            <a href="../lab1/lab-1.1.html" class="lab-works__link">Лабораторна робота №1</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab2/lab-2.1.html" class="lab-works__link">Лабораторна робота №2</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab3/lab-3.1.html" class="lab-works__link">Лабораторна робота №3</a>
+                        </li>
+                        <li class="lab-works__item ">
+                            <a href="../lab4/lab-4.1.html" class="lab-works__link">Лабораторна робота №3.2</a>
+                        </li>
+                        <li class="lab-works__item active">
+                            <a href="../lab5/lab-5.1.html" class="lab-works__link">Лабораторна робота №4</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab6-7/lab-6-7.1.html" class="lab-works__link">Лабораторна робота №5</a>
+                        </li>
+                        <li class="lab-works__item">
+                            <a href="../lab8-9/lab-8-9.1.html" class="lab-works__link">Лабораторна робота №6-7</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lab-description">
+                <div class="container">
+                    <div class="lab-description__wrapper">
+                        <aside class="lab-description__aside">
+                            <ul class="lab-description__list">
+                                <li class="lab-description__item">
+                                    <a href="./lab-5.1.html" class="lab-description__link">ПОСТАНОВКА ЗАДАЧІ ЛР№4</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.2.html" class="lab-description__link">Завдання №1</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.3.html" class="lab-description__link">Завдання №2</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.4.html" class="lab-description__link">Завдання №3</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.5.html" class="lab-description__link">Завдання №4</a>
+                                </li>
+                                <li class="lab-description__item big active">
+                                    <a href="./lab-5.6.html" class="lab-description__link">Завдання №5</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.7.html" class="lab-description__link">Завдання №6</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.8.html" class="lab-description__link">Завдання №7</a>
+                                </li>
+                                <li class="lab-description__item big">
+                                    <a href="./lab-5.8.html" class="lab-description__link">Завдання №8</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="lab-description__text">
+                            <p>Завдання №5. <br><br> Станція з продажу ремонтних дроїдів.
+                                Оголоси функцію makeTransaction(quantity, pricePerDroid, customerCredits), яка складає
+                                та повертає повідомлення про
+                                купівлю ремонтних дроїдів.
+
+                                Вона оголошує три параметри, значення яких будуть задаватися під час її виклику:
+                                • quantity — кількість замовлених дроїдів
+                                • pricePerDroid — ціна одного дроїда
+                                • customerCredits — сума коштів на рахунку клієнта
+                                Доповни функцію таким чином:
+                                • Оголоси змінну для зберігання загальної суми замовлення (загальна вартість усіх
+                                замовлених дроїдів) і задай їй вираз
+                                розрахунку цієї суми.
+                                • Додай перевірку, чи зможе клієнт оплатити замовлення:
+                                • якщо сума до сплати перевищує кількість кредитів на рахунку клієнта, функція має
+                                повертати рядок "Insufficient funds!"
+                                • в іншому випадку функція має повертати рядок "You ordered quantity droids worth
+                                totalPrice credits!", де
+                                quantity це кількість замовлених дроїдів, а totalPrice це їх загальна вартість.
+
+
+
+                            </p>
+
+                            <p><span>Код:</span></p>
+                            <pre class="example">
+                                                    <code>
+                                                                            
+                                         function makeTransaction(quantity, pricePerDroid, customerCredits) {
+                                        // Оголошуємо змінну для загальної суми
+                                        const totalPrice = quantity * pricePerDroid;
+                                                
+                                        // Перевірка
+                                         if (totalPrice > customerCredits) {
+                                        return "Insufficient funds!";
+                                        } else {
+                                         return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+                                        }
+                                        }
+                                                
+                                        // Приклад виклику функції:
+                                         console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
+                                        console.log(makeTransaction(3, 1000, 15000)); // "You ordered 3 droids worth 3000 credits!"
+                                         console.log(makeTransaction(10, 5000, 8000)); // "Insufficient funds!"
+                                                    </code>
+                                                    </pre>
+                            <p><span>Результат:</span></p>
+                            <img src="../img/5.6.png" alt="" class="screenshot">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        function scrollToBottom() {
+            const currentScroll = window.scrollY;
+            window.scrollTo(0, document.body.scrollHeight);
+            setTimeout(() => {
+                if (window.scrollY !== currentScroll) {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
+        scrollToBottom();
+    </script>
+</body>
+
+</html>
